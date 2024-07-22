@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper services File ]
+-----------------------------------------------------------------*/
+
+/* == Bootstrap == */
+@import url("plugins/bootstrap.min.css");
+
+/* == Owl.carousel == */
+@import url("plugins/owl.carousel.min.css");
+@import url("plugins/owl.theme.default.min.css");
+
+/* == Animate css == */
+@import url("plugins/animate.min.css");
+
+/* == Icons (omFont, flaticon, themify and fontawesome icons ==*/
+@import url("plugins/omFont.css");
+@import url("plugins/flaticon.css");
+@import url("plugins/themify-icons.css");
+@import url("plugins/font-awesome-pro.css");
+
+/* == Magnific-popup gallery  == */
+@import url("plugins/magnific-popup.css");
+
+/* == YouTubePopUp == */
+@import url("plugins/YouTubePopUp.css");
+
+/* == Booking == */
+@import url("plugins/select2.css");
+@import url("plugins/datepicker.css");
+
+/* == Vegas Slider == */
+@import url("plugins/vegas.slider.min.css");

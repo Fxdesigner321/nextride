@@ -1,0 +1,300 @@
+@font-face {
+	font-family: 'omFont';
+	src:url('../../fonts/omFont.eot');
+	src:url('../../fonts/omFontd41d.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/omFont.woff') format('woff'),
+		url('../../fonts/omFont.ttf') format('truetype'),
+		url('../../fonts/omFont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="omfi-"], [class*=" omfi-"] {
+	font-family: 'omFont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.omfi,
+.omfi-before:before { /* omFont Icon */
+  display: inline-block;
+  speak: none;
+  font-family: 'omFont';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	margin-right:0.3em;
+}
+.omfi-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+	vertical-align:middle;
+}
+.omfi-2x {
+  font-size: 2em;
+  vertical-align:middle;
+}
+.omfi-3x {
+  font-size: 3em;
+  vertical-align:middle;
+  
+}
+.omfi-4x {
+  font-size: 4em;
+  vertical-align:middle;
+}
+.omfi-5x {
+  font-size: 5em;
+  vertical-align:middle;
+}
+
+/***/
+.omfi-age:before {
+  content: "\e907";
+}
+.omfi-condition:before {
+  content: "\e908";
+}
+.omfi-door:before {
+  content: "\e909";
+}
+.omfi-luggage:before {
+  content: "\e90a";
+}
+.omfi-passengers:before {
+  content: "\e90b";
+}
+.omfi-transmission:before {
+  content: "\e90c";
+}
+
+.omfi-menu-500:before {
+  content: "\e61e";
+}
+.omfi-cross-400:before {
+  content: "\e61b";
+}
+.omfi-cross-500:before {
+  content: "\e61c";
+}
+.omfi-cross-700:before {
+  content: "\e61d";
+}
+.omfi-zoom-900:before {
+  content: "\e612";
+}
+.omfi-angle-down-400:before {
+  content: "\e600";
+}
+.omfi-angle-down-500:before {
+  content: "\e601";
+}
+.omfi-angle-down-700:before {
+  content: "\e602";
+}
+.omfi-angle-left-400:before {
+  content: "\e603";
+}
+.omfi-angle-left-500:before {
+  content: "\e604";
+}
+.omfi-angle-left-700:before {
+  content: "\e605";
+}
+.omfi-angle-right-400:before {
+  content: "\e606";
+}
+.omfi-angle-right-500:before {
+  content: "\e607";
+}
+.omfi-angle-right-700:before {
+  content: "\e608";
+}
+.omfi-angle-up-400:before {
+  content: "\e609";
+}
+.omfi-angle-up-500:before {
+  content: "\e60a";
+}
+.omfi-angle-up-700:before {
+  content: "\e60b";
+}
+.omfi-close-400:before {
+  content: "\e60c";
+}
+.omfi-close-500:before {
+  content: "\e60d";
+}
+.omfi-close-700:before {
+  content: "\e60e";
+}
+.omfi-format_quote:before {
+  content: "\e905";
+}
+.omfi-link:before {
+  content: "\e005";
+}
+.omfi-pin-outline:before {
+  content: "\e60f";
+}
+.omfi-lock:before {
+  content: "\f023";
+}
+.omfi-shopping-cart:before {
+  content: "\f07a";
+}
+.omfi-folder:before {
+  content: "\f07b";
+}
+.omfi-twitter:before {
+  content: "\f099";
+}
+.omfi-facebook:before {
+  content: "\f09a";
+}
+.omfi-github:before {
+  content: "\f09b";
+}
+.omfi-globe:before {
+  content: "\f0ac";
+}
+.omfi-pinterest:before {
+  content: "\f0d2";
+}
+.omfi-google-plus:before {
+  content: "\f0d5";
+}
+.omfi-caret-down:before {
+  content: "\f0d7";
+}
+.omfi-caret-right:before {
+  content: "\f0da";
+}
+.omfi-envelope:before {
+  content: "\f0e0";
+}
+.omfi-linkedin:before {
+  content: "\f0e1";
+}
+.omfi-comment-o:before {
+  content: "\f0e5";
+}
+.omfi-circle:before {
+  content: "\f111";
+}
+.omfi-youtube:before {
+  content: "\f167";
+}
+.omfi-xing:before {
+  content: "\f168";
+}
+.omfi-instagram:before {
+  content: "\f16d";
+}
+.omfi-flickr:before {
+  content: "\f16e";
+}
+.omfi-tumblr:before {
+  content: "\f173";
+}
+.omfi-dribbble:before {
+  content: "\f17d";
+}
+.omfi-skype:before {
+  content: "\f17e";
+}
+.omfi-foursquare:before {
+  content: "\f180";
+}
+.omfi-vk:before {
+  content: "\f189";
+}
+.omfi-wordpress:before {
+  content: "\f19a";
+}
+.omfi-openid:before {
+  content: "\f19b";
+}
+.omfi-yahoo:before {
+  content: "\f19e";
+}
+.omfi-delicious:before {
+  content: "\f1a5";
+}
+.omfi-digg:before {
+  content: "\f1a6";
+}
+.omfi-behance:before {
+  content: "\f1b4";
+}
+.omfi-spotify:before {
+  content: "\f1bc";
+}
+.omfi-deviantart:before {
+  content: "\f1bd";
+}
+.omfi-soundcloud:before {
+  content: "\f1be";
+}
+.omfi-vine:before {
+  content: "\f1ca";
+}
+.omfi-tag:before {
+  content: "\e906";
+}
+.omfi-location:before {
+  content: "\e901";
+}
+.omfi-calendar:before {
+  content: "\e90d";
+}
+.omfi-pencil:before {
+  content: "\e61f";
+}
+.omfi-user:before {
+  content: "\e904";
+}
+.omfi-warning:before {
+  content: "\e618";
+}
+.omfi-lastfm:before {
+  content: "\e902";
+}
+.omfi-phone:before {
+  content: "\e900";
+}
+.omfi-expand:before {
+  content: "\e611";
+}
+.omfi-contract:before {
+  content: "\e613";
+}
+.omfi-info:before {
+  content: "\e619";
+}
+.omfi-checkmark-circle:before {
+  content: "\e614";
+}
+.omfi-spam:before {
+  content: "\e61a";
+}
+.omfi-checkmark:before {
+  content: "\e615";
+}
+.omfi-play:before {
+  content: "\e616";
+}
+.omfi-pause:before {
+  content: "\e617";
+}
+.omfi-vimeo:before {
+  content: "\e903";
+}
