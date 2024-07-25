@@ -10,7 +10,7 @@
             <div class="col-lg-12">
                 <div class="d-flex flex-wrap align-items-center justify-content-between my-schedule mb-4">
                     <div class="d-flex align-items-center justify-content-between">
-                        <h4 class="font-weight-bold">Customer</h4>
+                        <h4 class="font-weight-bold">Driver</h4>
                     </div>
                     <div class="create-workform">
                         <div class="d-flex flex-wrap align-items-center justify-content-between">
@@ -18,7 +18,7 @@
                                 <form class="mr-3 position-relative">
                                     <div class="form-group mb-0">
                                         <input type="text" class="form-control" id="exampleInputText"
-                                               aria-describedby="textHelp" placeholder="Search Customer">
+                                               aria-describedby="textHelp" placeholder="Search Driver">
                                         <a class="search-link" href="#">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" fill="none"
                                                  viewBox="0 0 24 24" stroke="currentColor">
@@ -28,14 +28,14 @@
                                         </a>
                                     </div>
                                 </form>
-                                <a href="customer-add.html"
+                                <a href="Driver-add.html"
                                    class="btn btn-primary position-relative d-flex align-items-center justify-content-between">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                               d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                                     </svg>
-                                    Add Customer
+                                    Add Driver
                                 </a>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                         <div class="card card-block card-stretch">
                             <div class="card-body p-0">
                                 <div class="d-flex justify-content-between align-items-center p-3">
-                                    <h5 class="font-weight-bold">Customer List</h5>
+                                    <h5 class="font-weight-bold">Driver List</h5>
                                     <button class="btn btn-secondary btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="20" fill="none"
                                              viewBox="0 0 24 24" stroke="currentColor">
@@ -119,7 +119,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="customer-view.html">
+                                               data-original-title="View" href="Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -130,7 +130,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="customer-edit.html">
+                                               data-original-title="Edit" href="Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -182,7 +182,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="https://templates.iqonic.design/datum/laravel/backend/customer-view.html">
+                                               data-original-title="View" href="https://templates.iqonic.design/datum/laravel/backend/Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -193,7 +193,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="https://templates.iqonic.design/datum/laravel/backend/customer-edit.html">
+                                               data-original-title="Edit" href="https://templates.iqonic.design/datum/laravel/backend/Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -245,7 +245,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="https://templates.iqonic.design/datum/laravel/backend/customer-view.html">
+                                               data-original-title="View" href="https://templates.iqonic.design/datum/laravel/backend/Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -256,7 +256,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="https://templates.iqonic.design/datum/laravel/backend/customer-edit.html">
+                                               data-original-title="Edit" href="https://templates.iqonic.design/datum/laravel/backend/Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -308,7 +308,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="customer-view.html">
+                                               data-original-title="View" href="Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -319,7 +319,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="customer-edit.html">
+                                               data-original-title="Edit" href="Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -371,7 +371,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="customer-view.html">
+                                               data-original-title="View" href="Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -382,7 +382,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="customer-edit.html">
+                                               data-original-title="Edit" href="Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -434,7 +434,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="customer-view.html">
+                                               data-original-title="View" href="Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -445,7 +445,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="customer-edit.html">
+                                               data-original-title="Edit" href="Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -497,7 +497,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="customer-view.html">
+                                               data-original-title="View" href="Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -508,7 +508,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="customer-edit.html">
+                                               data-original-title="Edit" href="Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -560,7 +560,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="customer-view.html">
+                                               data-original-title="View" href="Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -571,7 +571,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="customer-edit.html">
+                                               data-original-title="Edit" href="Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -623,7 +623,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="customer-view.html">
+                                               data-original-title="View" href="Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -634,7 +634,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="customer-edit.html">
+                                               data-original-title="Edit" href="Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -686,7 +686,7 @@
                                     <td>
                                         <div class="d-flex justify-content-end align-items-center">
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="View" href="customer-view.html">
+                                               data-original-title="View" href="Driver-view.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -697,7 +697,7 @@
                                                 </svg>
                                             </a>
                                             <a class="" data-toggle="tooltip" data-placement="top" title=""
-                                               data-original-title="Edit" href="customer-edit.html">
+                                               data-original-title="Edit" href="Driver-edit.html">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
                                                      width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round"

@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <div id="remoteModelData" class="modal fade" role="dialog"></div>
 <div class="content-page">
     <div class="container-fluid">
@@ -251,6 +250,5 @@
    </div>
 </div>
 </div>
-
 
 @endsection

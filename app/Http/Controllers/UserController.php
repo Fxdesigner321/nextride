@@ -17,4 +17,16 @@ class UserController extends Controller
     function edit(){
         return view('dashboard.user.edit');
     }
+
+    function account_setting(){
+        return view('dashboard.user.account_setting');
+    }
+    
+    function privacy_setting(){
+        return view('dashboard.user.privacy_setting');
+    }
+
+    function profile_edit(){
+        return view('dashboard.user.profile_edit');
+    }
 }

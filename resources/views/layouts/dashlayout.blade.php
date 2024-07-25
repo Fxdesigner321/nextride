@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from templates.iqonic.design/datum/laravel/public/dashboard1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 09:43:12 GMT -->
+<!-- Mirrored from templates.iqonic.design/Next Ride/laravel/public/dashboard1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 09:43:12 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="6bYqF3CFloigfnwqIZVI2JtmIysek8sFgGcoLHnT">
 
-    <title>Datum</title>
+    <title>Next Ride</title>
 
     <link rel="shortcut icon" href="{{asset('dashasset/images/favicon.ico')}}" />
 <link rel='stylesheet' href="{{asset('dashasset/vendor/fullcalendar/core/main.css')}}" />
@@ -448,29 +448,29 @@
                                         <svg class="svg-icon mr-0 text-secondary" id="h-01-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
-                                        <a href="app/user/profile.html">My Profile</a>
+                                        <a href="{{url('dashboard/user')}}">My Profile</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-02-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                         </svg>
-                                        <a href="app/user/profile-edit.html">Edit Profile</a>
+                                        <a href="{{url('dashboard/user/profile_edit')}}">Edit Profile</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-03-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
-                                        <a href="app/user/account-setting.html">Account Settings</a>
+                                        <a href="{{url('dashboard/user/account_setting')}}">Account Settings</a>
                                     </li>
                                     <li class="dropdown-item d-flex svg-icon">
                                         <svg class="svg-icon mr-0 text-secondary" id="h-04-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                         </svg>
-                                        <a href="app/user/privacy-setting.html">Privacy Settings</a>
+                                        <a href="{{url('dashboard/user/privacy_setting')}}">Privacy Settings</a>
                                     </li>
                                     <li class="dropdown-item  d-flex svg-icon border-top">
-                                        <form method="POST" action="https://templates.iqonic.design/datum/laravel/public/logout">
+                                        <form method="POST" action="https://templates.iqonic.design/Next Ride/laravel/public/logout">
                                             <input type="hidden" name="_token" value="6bYqF3CFloigfnwqIZVI2JtmIysek8sFgGcoLHnT">                                        <svg class="svg-icon mr-0 text-secondary" id="h-05-p" width="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                         </svg>
@@ -497,7 +497,7 @@
             <a href="{{url('dashboard')}}" class="header-logo">
                 <img src="{{asset('dashasset/images/logo.png')}}" class="img-fluid rounded-normal light-logo" alt="logo">
                 <img src="{{asset('dashasset/images/logo-dark.png')}}" class="img-fluid rounded-normal darkmode-logo" alt="logo">
-                <span>Datum</span>
+                <span>Next Ride</span>
             </a>
             <div class="side-menu-bt-sidebar-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="text-light wrapper-menu" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -508,7 +508,7 @@
         <div class="data-scrollbar" data-scroll="1">
             <nav class="iq-sidebar-menu">
                 <ul id="iq-sidebar-toggle" class="side-menu">
-                    <li class="active sidebar-layout">
+                    <li class="sidebar-layout">
                         <a href="{{url('dashboard')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -516,11 +516,8 @@
                                 </svg>
                             </i>
                             <span class="ml-2">Dashboard</span>
-                            <p class="mb-0 w-10 badge badge-pill badge-primary">6</p>
+
                         </a>
-                    </li>
-                    <li class="px-3 pt-3 pb-2 ">
-                        <span class="text-uppercase small font-weight-bold">Application</span>
                     </li>
                     <li class=" sidebar-layout">
                         <a href="{{url('dashboard/customer')}}" class="svg-icon ">
@@ -533,44 +530,79 @@
                         </a>
                     </li>
                     <li class=" sidebar-layout">
-                        <a href="product.html" class="svg-icon">
+                        <a href="{{url('dashboard/driver')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                                 </svg>
                             </i>
-                            <span class="ml-2">Product</span>
+                            <span class="ml-2">Driver</span>
                         </a>
                     </li>
                     <li class=" sidebar-layout" >
-                        <a href="order.html" class="svg-icon">
+                        <a href="{{url('dashboard/vehicles')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
                             </i>
-                            <span class="ml-2">Order</span>
+                            <span class="ml-2">Vehicles</span>
                         </a>
                     </li>
-                    <li class=" sidebar-layout">
-                        <a href="invoice.html" class="svg-icon">
-                            <i class="">
-                                <svg class="icon line" width="18" id="receipt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M17,16V3L13,5,10,3,7,5,3,3V17.83A3.13,3.13,0,0,0,5.84,21,3,3,0,0,0,9,18V17a1,1,0,0,1,1-1H20a1,1,0,0,1,1,1v1a3,3,0,0,1-3,3H6" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
-                                    <line x1="8" y1="10" x2="12" y2="10" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line>
-                                </svg> 
-                            </i>
-                            <span class="ml-2">Invoice</span>
-                        </a>
-                    </li>
-                    <li class=" sidebar-layout">
-                        <a href="app/todo.html" class="svg-icon">
+                    <li class=" sidebar-layout" >
+                        <a href="{{url('dashboard/bike')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
-                            </i><span class="ml-2">Todo</span>
+                            </i>
+                            <span class="ml-2">Bikes</span>
                         </a>
+                    </li>
+                    <li class="sidebar-layout">
+                        <a href="#app5" class="collapsed svg-icon" data-toggle="collapse" aria-expanded="false">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                </svg>
+                            </i>
+                            <span class="ml-2">Rides</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon iq-arrow-right arrow-active" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <ul id="app5" class="submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class=" sidebar-layout">
+                                <a href="table/data.html" class="svg-icon">
+                                    <i class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                                        </svg>
+                                    </i>
+                                    <span class="ml-2">Ride</span>
+                                </a>
+                            </li>
+                            <li class=" sidebar-layout">
+                                <a href="table/data.html" class="svg-icon">
+                                    <i class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                                        </svg>
+                                    </i>
+                                    <span class="ml-2">Ride Request</span>
+                                </a>
+                            </li>
+                            <li class=" sidebar-layout">
+                                <a href="table/editable.html" class="svg-icon">
+                                    <i class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                                        </svg>
+                                    </i>
+                                    <span class="ml-2">Trip History</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class=" sidebar-layout">
                         <a href="calender.html" class="svg-icon">
@@ -579,31 +611,16 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                 </svg>
                             </i>
-                            <span class="ml-2">Calendar</span>
-                            <p class="mb-0 px-2 badge badge-pill badge-success">New</p>
+                            <span class="ml-2">Nofications</span>
                         </a>
                     </li>
-                    <li class="px-3 pt-3 pb-2">
-                        <span class="text-uppercase small font-weight-bold">Pages</span>
-                    </li>
                     <li class=" sidebar-layout">
-                        <a href="app/chat.html" class="svg-icon">
+                        <a href="{{url('dashboard/chat')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                 </svg>
                             </i><span class="ml-2">Chat</span>
-                        </a>
-                    </li>
-                     <li class=" sidebar-layout">
-                        <a href="app/user/profile.html" class="svg-icon">
-                            <i class="">
-                                <svg class="svg-icon" id="iq-user-1-1" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">User Profile</span>
                         </a>
                     </li>
                     <li class="sidebar-layout">
@@ -620,7 +637,7 @@
                         </a>
                         <ul id="app1" class="submenu collapse" data-parent="#iq-sidebar-toggle">                        
                             <li class=" sidebar-layout">
-                                <a href="auth/login.html" class="svg-icon">
+                                <a href="{{url('dashboard/auth')}}" class="svg-icon">
                                     <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
                                     </svg>
@@ -628,7 +645,7 @@
                                 </a>
                             </li>
                             <li class=" sidebar-layout">
-                                <a href="auth/register.html" class="svg-icon">
+                                <a href="{{url('dashboard/auth/register')}}" class="svg-icon">
                                     <i class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
@@ -637,7 +654,7 @@
                                 </a>
                             </li>
                             <li class=" sidebar-layout">
-                                <a href="auth/reset-password.html" class="svg-icon">
+                                <a href="{{url('dashboard/auth/reset_password')}}" class="svg-icon">
                                     <i class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
@@ -646,7 +663,7 @@
                                 </a>
                             </li>
                             <li class=" sidebar-layout">
-                                <a href="auth/verify-email.html" class="svg-icon">
+                                <a href="{{url('dashboard/auth/verify_email')}}" class="svg-icon">
                                     <i class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -655,7 +672,7 @@
                                 </a>
                             </li>
                             <li class=" sidebar-layout">
-                                <a href="auth/lock-screen.html" class="svg-icon">
+                                <a href="{{url('dashboard/auth/lock_screen')}}" class="svg-icon">
                                     <i class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -665,48 +682,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-layout">
-                        <a href="#app6" class="collapsed svg-icon" data-toggle="collapse" aria-expanded="false">
-                            <i>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                                </svg>
-                            </i>
-                            <span class="ml-2">Error</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon iq-arrow-right arrow-active" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                        <ul id="app6" class="submenu collapse" data-parent="#iq-sidebar-toggle">
-                            <li class=" sidebar-layout">
-                                <a href="extra/error/error404.html" class="svg-icon">
-                                    <i class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </i>
-                                    <span class="ml-2">Error 404</span>
-                                </a>
-                            </li>
-                            <li class=" sidebar-layout">
-                                <a href="extra/error/error500.html" class="svg-icon">
-                                    <i class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414" />
-                                        </svg>
-                                    </i>
-                                    <span class="ml-2">Error 500</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class=" sidebar-layout">
-                        <a href="extra/comingsoon.html" class="svg-icon">
+                        <a href="{{url('dashboard/rating')}}" class="svg-icon">
                             <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                                 </svg>
-                            </i><span class="ml-2">Comingsoon</span>
+                            </i><span class="ml-2">Rating</span>
                         </a>
                     </li>
                     <li class=" sidebar-layout">
@@ -715,16 +697,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                                 </svg>
-                            </i><span class="ml-2">Maintenance</span>
-                        </a>
-                    </li>
-                    <li class=" sidebar-layout">
-                        <a href="extra/blankpage.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                                </svg>
-                            </i><span class="ml-2">Blank Page</span>
+                            </i><span class="ml-2">Payment</span>
                         </a>
                     </li>
                     <li class=" sidebar-layout">
@@ -733,25 +706,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
                                 </svg>
-                            </i><span class="ml-2">Faq</span>
-                        </a>
-                    </li>
-                    <li class=" sidebar-layout">
-                        <a href="extra/pricing.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Pricing</span>
-                        </a>
-                    </li>
-                     <li class=" sidebar-layout">
-                        <a href="extra/timeline/timeline2.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </i><span class="ml-2">Timeline</span>
+                            </i><span class="ml-2">Year</span>
                         </a>
                     </li>
                     <li class="px-3 pt-3 pb-2">
@@ -1126,51 +1081,6 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-layout">
-                        <a href="#app5" class="collapsed svg-icon" data-toggle="collapse" aria-expanded="false">
-                            <i>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                </svg>
-                            </i>
-                            <span class="ml-2">Table</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon iq-arrow-right arrow-active" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                        <ul id="app5" class="submenu collapse" data-parent="#iq-sidebar-toggle">
-                            <li class=""class="sidebar-layout">
-                                <a href="table/basics.html" class="svg-icon">
-                                    <i class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
-                                        </svg>
-                                    </i>
-                                    <span class="ml-2">Basic Tables</span>
-                                </a>
-                            </li>
-                            <li class=" sidebar-layout">
-                                <a href="table/data.html" class="svg-icon">
-                                    <i class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-                                        </svg>
-                                    </i>
-                                    <span class="ml-2">Data Table</span>
-                                </a>
-                            </li>
-                            <li class=" sidebar-layout">
-                                <a href="table/editable.html" class="svg-icon">
-                                    <i class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                                        </svg>
-                                    </i>
-                                    <span class="ml-2">Editable Table</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
                     <li class=" sidebar-layout">
                         <a href="charts/apex.html" class="svg-icon">
                             <i class="">
@@ -1211,7 +1121,7 @@
             </div>
             <div class="col-lg-6 text-right">
                 <span class="mr-1">
-                    Copyright 2024© <a href="#" class="">Datum</a>
+                    Copyright 2024© <a href="#" class="">Next Ride</a>
                     All Rights Reserved.
                 </span>
             </div>
@@ -1343,7 +1253,7 @@
                 $.ajax({
                     type: "GET",
                     dataType: "json",
-                    url: "https://templates.iqonic.design/datum/laravel/public/changeStatus",
+                    url: "https://templates.iqonic.design/Next Ride/laravel/public/changeStatus",
                     data: { 'status': status, 'id': id ,'type': type  },
                     success: function(data){
                         alert(data.message);
@@ -1388,5 +1298,5 @@
 </script>
 </body>
 
-<!-- Mirrored from templates.iqonic.design/datum/laravel/public/dashboard1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 09:43:45 GMT -->
+<!-- Mirrored from templates.iqonic.design/Next Ride/laravel/public/dashboard1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 09:43:45 GMT -->
 </html>

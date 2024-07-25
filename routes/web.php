@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Bike_TypeController;
 use App\Http\Controllers\bikesController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DriverController;
@@ -66,12 +68,12 @@ Route::post('/dashboard/bike_type/edit/{id}',[Bike_TypeController::class , 'edit
 Route::post('/dashboard/bike_type/store',[Bike_TypeController::class , 'store']);
 Route::get('/dashboard/bike_type/delete/{id}',[Bike_TypeController::class , 'delete']);
 
-// Bikes Routes
-Route::get('/dashboard/bikes',[bikesController::class , 'index']);
-Route::post('/dashboard/bikes/add',[bikesController::class , 'add']);
-Route::post('/dashboard/bikes/edit/{id}',[bikesController::class , 'edit']);
-Route::post('/dashboard/bikes/store',[bikesController::class , 'store']);
-Route::get('/dashboard/bikes/delete/{id}',[bikesController::class , 'delete']);
+// Bike Routes
+Route::get('/dashboard/bike',[bikesController::class , 'index']);
+Route::get('/dashboard/bike/add',[bikesController::class , 'add']);
+Route::get('/dashboard/bike/edit',[bikesController::class , 'edit']); /*{id}*/
+Route::post('/dashboard/bike/store',[bikesController::class , 'store']);
+Route::get('/dashboard/bike/delete/{id}',[bikesController::class , 'delete']);
 
 // Driver Routes
 Route::get('/dashboard/driver',[DriverController::class , 'index']);
@@ -142,6 +144,11 @@ Route::post('/dashboard/user/add',[UserController::class , 'add']);
 Route::post('/dashboard/user/edit/{id}',[UserController::class , 'edit']);
 Route::post('/dashboard/user/store',[UserController::class , 'store']);
 Route::get('/dashboard/user/delete/{id}',[UserController::class , 'delete']);
+Route::get('/dashboard/user/privacy_setting',[UserController::class , 'privacy_setting']);
+Route::get('/dashboard/user/profile_edit',[UserController::class , 'profile_edit']);
+Route::get('/dashboard/user/account_setting',[UserController::class , 'account_setting']);
+
+
 
 // Vehicle_Type Routes
 Route::get('/dashboard/vehicle_type',[Vehicle_TypeController::class , 'index']);
@@ -152,8 +159,8 @@ Route::get('/dashboard/vehicle_type/delete/{id}',[Vehicle_TypeController::class 
 
 // Vehicles Routes
 Route::get('/dashboard/vehicles',[VehiclesController::class , 'index']);
-Route::post('/dashboard/vehicles/add',[VehiclesController::class , 'add']);
-Route::post('/dashboard/vehicles/edit/{id}',[VehiclesController::class , 'edit']);
+Route::get('/dashboard/vehicles/add',[VehiclesController::class , 'add']);
+Route::get('/dashboard/vehicles/edit',[VehiclesController::class , 'edit']); /*{id}*/
 Route::post('/dashboard/vehicles/store',[VehiclesController::class , 'store']);
 Route::get('/dashboard/vehicles/delete/{id}',[VehiclesController::class , 'delete']);
 
@@ -163,3 +170,16 @@ Route::post('/dashboard/year/add',[YearController::class , 'add']);
 Route::post('/dashboard/year/edit/{id}',[YearController::class , 'edit']);
 Route::post('/dashboard/year/store',[YearController::class , 'store']);
 Route::get('/dashboard/year/delete/{id}',[YearController::class , 'delete']);
+
+// Chat Routes
+Route::get('/dashboard/chat',[ChatController::class , 'index']);
+
+// Auth Rouths
+Route::get('/dashboard/auth',[AuthController::class , 'index']);
+Route::get('/dashboard/auth/lock_screen',[AuthController::class , 'lock_screen']);
+Route::get('/dashboard/auth/recover_password',[AuthController::class , 'recover_password']);
+Route::get('/dashboard/auth/register',[AuthController::class , 'register']);
+Route::get('/dashboard/auth/reset_password',[AuthController::class , 'reset_password']);
+Route::get('/dashboard/auth/verify_email',[AuthController::class , 'verify_email']);
+
+
