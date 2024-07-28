@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('driving_license',225);
             $table->string('vehicle_registration',225);
             $table->unsignedInteger('vehicle_id');
+            $table->unsignedInteger('phonenumber');
             $table->timestamps();
             $table->softDeletes();
         });

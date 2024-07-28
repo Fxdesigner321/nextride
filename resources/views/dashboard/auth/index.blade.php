@@ -1,76 +1,163 @@
-@extends('layouts.authlayout')
+@extends('layouts.dashlayout')
 
 @section('content')
 
-<div class="wrapper">
-    <section class="login-content">
-<div class="container h-100">
-<div class="row align-items-center justify-content-center h-100">
-  <div class="col-md-5">
-     <div class="card p-3">
-        <div class="card-body">
-           <div class="auth-logo">
-           <img src="{{asset('dashasset/images/logo.png')}}" class="img-fluid  rounded-normal  darkmode-logo" alt="logo">
-              <img src="../images/logo-dark.png" alt="user-icon" class="img-fluid rounded-normal light-logo">
-           </div>
-           <h3 class="mb-3 font-weight-bold text-center">Sign In</h3>
-           <p class="text-center text-secondary mb-4">Log in to your account to continue</p>
-           <div class="social-btn d-flex justify-content-around align-items-center mb-4">
-               <button class="btn btn-outline-light">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="88.428 12.828 107.543 207.085">
-                       <path d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z" fill="#3c5a9a"/>
-                   </svg>
-               </button>
-               <button class="btn btn-outline-light">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 262" preserveAspectRatio="xMidYMid">
-                       <path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"/>
-                       <path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"/>
-                       <path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"/>
-                       <path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"/>
-                   </svg>
-               </button>
-               <button class="btn btn-outline-light">
-                   <svg width="20" height="20" viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
-                       <path d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570A  70,  70 0 0 1 370, 523A  70,  70 0 0 0 401, 521A  70,  70 0 0 1 344, 455A  70,  70 0 0 0 372, 460A  70,  70 0 0 1 354, 370A 195, 195 0 0 0 495, 442A  67,  67 0 0 1 611, 380A 117, 117 0 0 0 654, 363A  65,  65 0 0 1 623, 401A 117, 117 0 0 0 662, 390A  65,  65 0 0 1 630, 425Z" style="fill:#3BA9EE;"/>
-                       </svg>
-               </button>
-           </div>
-           <div class="mb-5">
-               <p class="line-around text-secondary mb-0"><span class="line-around-1">or login with email</span></p class="line-around mb-0">
-           </div>
-            <!-- Session Status -->
-            
-            <!-- Validation Errors -->
-                                <form method="POST" action="https://templates.iqonic.design/datum/laravel/public/login" data-toggle="validator">
-                <input type="hidden" name="_token" value="6bYqF3CFloigfnwqIZVI2JtmIysek8sFgGcoLHnT">
-              <div class="row">
-                 <div class="col-lg-12">
-                    <div class="form-group">
-                       <label class="text-secondary">Email</label>
-                       <input id="email" name="email" value="" class="form-control" type="email" placeholder="Enter Email" required autofocus>
+<div id="remoteModelData" class="modal fade" role="dialog"></div>
+<div class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="d-flex flex-wrap align-items-center justify-content-between my-schedule mb-4">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h4 class="font-weight-bold">Users</h4>
                     </div>
-                 </div>
-                 <div class="col-lg-12 mt-2">
-                    <div class="form-group">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <label class="text-secondary">Password</label>
-                            <label><a href="recover-password.html">Forgot Password?</a></label>
-                        </div>                                    
-                       <input class="form-control" type="password" placeholder="Enter Password" name="password"  required autocomplete="current-password">
+                    <div class="create-workform">
+                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                            <div class="modal-product-search d-flex">
+                                <form method="POST" class="mr-3 position-relative">
+                                    <div class="form-group mb-0">
+                                        <input type="text" class="form-control" id="exampleInputText"
+                                               aria-describedby="textHelp" placeholder="Search Users">
+                                        <a class="search-link" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" fill="none"
+                                                 viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </form>
+                                <a href="{{url('dashboard/auth/add')}}"
+                                   class="btn btn-primary position-relative d-flex align-items-center justify-content-between">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                    </svg>
+                                    Add Users
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                 </div>                              
-              </div>
-              <button type="submit" class="btn btn-primary btn-block mt-2">Log In</button>
-              <div class="col-lg-12 mt-3">
-                   <p class="mb-0 text-center">Don't have an account? <a href="register.html">Sign Up</a></p>
-              </div>
-           </form>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-block card-stretch">
+                            <div class="card-body p-0">
+                                <div class="d-flex justify-content-between align-items-center p-3">
+                                    <h5 class="font-weight-bold">user List</h5>
+                                    <button class="btn btn-secondary btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="20" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                        </svg>
+                                        Export
+                                    </button>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table data-table mb-0">
+                                        <thead class="table-color-heading">
+                                        <tr class="">
+                                <th scope="col">
+                                    Image
+                                </th>
+                                <th scope="col">
+                                    Name
+                                </th>
+                                <th scope="col">
+                                    Email
+                                </th>
+                                <th scope="col">
+                                    Contact
+                                </th>
+                                <th scope="col">
+                                    Gender
+                                </th>
+                                <th scope="col">
+                                    Status
+                                </th>
+                                <th scope="col" class="text-right">
+                                    Action
+                                </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    @foreach ($users as $item)
+                                    <tr class="white-space-no-wrap">
+                                        <td class="">
+                                            <div class="active-project-1 d-flex align-items-center mt-0 ">
+                                                <div class="h-avatar is-medium">
+                                                    <img class="avatar rounded-circle" src="{{asset('dashasset/images/user/1.jpg')}}">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            {{$item->fname . $item->lname}}
+                                        </td>
+                                        <td>{{$item->email}}</td>
+                                        <td>
+                                            {{$item->phone_number}}
+                                        </td>
+                                        <td>
+                                            {{$item->gender}}
+                                        </td>
+                                        <td>
+                                            @if ($item->status == 1)
+                                             <span class="badge bg-success">Active</span>
+                                             @else
+                                             <span class="badge bg-danger">Unactive</span>
+                                            @endif
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end align-items-center">
+                                                <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                                   data-original-title="View" href="user-view.html">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary"
+                                                         width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="2"
+                                                              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                                    </svg>
+                                                </a>
+                                                <a class="" data-toggle="tooltip" data-placement="top" title=""
+                                                   data-original-title="Edit" href="{{url('dashboard/user/edit')}}">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4"
+                                                         width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="2"
+                                                              d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                                                    </svg>
+                                                </a>
+                                                <a class="badge bg-danger" data-toggle="tooltip" data-placement="top"
+                                                   title="" data-original-title="Delete" href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none"
+                                                         viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="2"
+                                                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                    
+
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-     </div>
-  </div>
-</div>
-</div>
-</section>
+    </div>
+    </div>
 </div>
 
 @endsection

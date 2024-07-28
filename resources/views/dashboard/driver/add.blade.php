@@ -11,16 +11,16 @@
                    <div class="d-flex align-items-center justify-content-between">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb p-0 mb-0">
-                                <li class="breadcrumb-item"><a href="customer.html">Customers</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Add Customer</li>
+                                <li class="breadcrumb-item"><a href="Driver.html">Drivers</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add Driver</li>
                             </ol>
                         </nav>
                     </div>                                   
                 </div>
             </div>
             <div class="col-lg-12 mb-3 d-flex justify-content-between">
-                <h4 class="font-weight-bold0 d-flex align-items-center">Add New Customer</h4>
-                <a href="customer.html" class="btn btn-primary btn-sm d-flex align-items-center justify-content-between">
+                <h4 class="font-weight-bold0 d-flex align-items-center">Add New Driver</h4>
+                <a href="Driver.html" class="btn btn-primary btn-sm d-flex align-items-center justify-content-between">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
                     </svg>
@@ -51,114 +51,45 @@
                                     </div>
                                 </div>
                             </div>
+                            @if ($errors)
+                            @foreach ($errors as $error)
+                            {{$error}}
+                            @endforeach
+                            @endif
                             <div class="col-md-9">
-                                <form class="row g-3 date-icon-set-modal">
+                                <form action="{{url('/dashboard/driver/store')}}" method="POST"  enctype="multipart/form-data" class="row g-3 date-icon-set-modal">
+                                    @csrf
                                     <div class="col-md-6 mb-3">
-                                        <label for="Text1" class="form-label font-weight-bold text-muted text-uppercase">Full Name</label>
-                                        <input type="text" class="form-control" id="Text1" placeholder="Enter Full Name">
+                                        <label for="Text1" class="form-label font-weight-bold text-muted text-uppercase">CNIC No:</label>
+                                        <input type="text" class="form-control" id="Text1" name="cnic_front_side" placeholder="Enter Your CNIC Number">
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label class="form-label font-weight-bold text-muted text-uppercase">Gender</label><br>
-                                        <div class="form-check form-check-inline">
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="inlineRadio1" name="customRadio-1" class="custom-control-input">
-                                                <label class="custom-control-label" for="inlineRadio1"> Male </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="inlineRadio2" name="customRadio-1" class="custom-control-input">
-                                                <label class="custom-control-label" for="inlineRadio2"> Female </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check form-check-inline mt-2">
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="inlineRadio3" name="customRadio-1" class="custom-control-input">
-                                                <label class="custom-control-label" for="inlineRadio3"> Other </label>
-                                            </div>
-                                        </div>
+                                        <label for="Text1" class="form-label font-weight-bold text-muted text-uppercase">CNIC Expire Date</label>
+                                        <input type="date" class="form-control" id="Text1" name="cnic_back_side" placeholder="Enter Your CNIC Expire Date">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="Text5" class="form-label font-weight-bold text-muted text-uppercase">Vehicle Id</label>
+                                        <input type="text" class="form-control" id="Text5" name="vehicle_id" placeholder="Enter Vehicle Id">
                                     </div>
                                     <div class="col-md-6 mb-3 position-relative">
-                                        <label for="Text2" class="form-label font-weight-bold text-muted text-uppercase">Birth Day</label>
-                                        <input type="text" class="form-control vanila-datepicker" id="Text2" name="event_date" placeholder="Enter Birth Day" autocomplete="off">
-                                        <span class="search-link">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                            </svg>
-                                        </span>
+                                        <label for="Text2" class="form-label font-weight-bold text-muted text-uppercase">Driving License</label>
+                                        <input type="text" class="form-control" id="Text2" name="driving_license" placeholder="Enter Driving License" autocomplete="off">
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="Text3" class="form-label font-weight-bold text-muted text-uppercase">Company Name</label>
-                                        <input type="text" class="form-control" id="Text3" placeholder="Enter Company Name">
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="Text4" class="form-label font-weight-bold text-muted text-uppercase">Email</label>
-                                        <input type="text" class="form-control" id="Text4" placeholder="Enter Email">
+                                        <label for="Text4" class="form-label font-weight-bold text-muted text-uppercase">Vehicle Registration</label>
+                                        <input type="text" class="form-control" id="Text4" name="vehicle_registration" placeholder="Enter Vehicle Registration">
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="Text5" class="form-label font-weight-bold text-muted text-uppercase">Phone</label>
-                                        <input type="text" class="form-control" id="Text5" placeholder="Enter Phone">
+                                        <input type="text" class="form-control" name="phonenumber" id="Text5" placeholder="Enter Phone">
                                     </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="inputcountry" class="form-label font-weight-bold text-muted text-uppercase">Country</label>
-                                        <select id="inputcountry" class="form-select form-control choicesjs" >
-                                            <option class="" selected>Select Country</option>
-                                            <option value="USA">USA</option>
-                                            <option value="UK">UK</option>
-                                            <option value="France">France</option>
-                                        </select>
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <button type="submit" class="btn btn-primary">
+                                            Add Driver
+                                        </button>
                                     </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="inputState" class="form-label font-weight-bold text-muted text-uppercase">State/Region</label>
-                                        <select id="inputState" class="form-select form-control choicesjs">
-                                            <option class="" selected>Select State/Region</option>
-                                            <option value="Ohio">Ohio</option>
-                                            <option value="Briston">Briston</option>
-                                            <option value="Nevada">Nevada</option>
-                                            <option value="Georgia">Georgia</option>
-                                            <option value="Texas">Texas</option>
-                                            <option value="California">California</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="Text6" class="form-label font-weight-bold text-muted text-uppercase">Address</label>
-                                        <input type="text" class="form-control" id="Text6" placeholder="Enter Address">
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="Text7" class="form-label font-weight-bold text-muted text-uppercase">Zipcode</label>
-                                        <input type="text" class="form-control" id="Text7" placeholder="Enter Zipcode">
-                                    </div>
-                                    <div class="col-md-12 mb-3">
-                                        <label for="Text9" class="form-label font-weight-bold text-muted text-uppercase">Bio</label>
-                                        <textarea class="form-control" id="Text9" rows="2" placeholder="Enter Bio"></textarea>
-                                    </div>
-                                    <div class="col-md-12 mb-3">
-                                        <label class="form-label font-weight-bold text-muted text-uppercase mb-3">Notification Type</label><br>
-                                        <div class="form-check form-check-inline">
-                                            <div class="custom-control custom-checkbox custom-control-inline">
-                                                <input type="checkbox" class="custom-control-input m-0" id="inlineCheckbox1">
-                                                <label class="custom-control-label" for="inlineCheckbox1">Email</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <div class="custom-control custom-checkbox custom-control-inline">
-                                                <input type="checkbox" class="custom-control-input m-0" id="inlineCheckbox2">
-                                                <label class="custom-control-label" for="inlineCheckbox2">SMS</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <div class="custom-control custom-checkbox custom-control-inline">
-                                                <input type="checkbox" class="custom-control-input m-0" id="inlineCheckbox3">
-                                                <label class="custom-control-label" for="inlineCheckbox3">Phone</label>
-                                            </div>
-                                        </div>
-                                    </div>                                    
                                 </form>
-                                <div class="d-flex justify-content-end mt-3">
-                                    <button class="btn btn-primary">
-                                        Add Customer
-                                    </button>
-                                </div>
+                            </div>                                    
                             </div>
                         </div>
                     </div>

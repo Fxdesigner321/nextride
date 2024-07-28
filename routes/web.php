@@ -57,9 +57,9 @@ Route::get('/dashboard',[DashboardController::class , 'index']);
 // Customer Routes
 Route::get('/dashboard/customer',[CustomerController::class , 'index']);
 Route::get('/dashboard/customer/add',[CustomerController::class , 'add']);
-Route::get('/dashboard/customer/edit/',[CustomerController::class , 'edit']); /*{id}*/
 Route::post('/dashboard/customer/store',[CustomerController::class , 'store']);
-Route::get('/dashboard/customer/delete/{id}',[CustomerController::class , 'delete']);
+Route::get('/dashboard/customer/edit/',[CustomerController::class , 'edit']); /*{id}*/
+Route::get('/dashboard/customer/delete/{id}',[CustomerController::class , 'delete'])->name('customer.delete');
 
 // Bike_Type Routes
 Route::get('/dashboard/bike_type',[Bike_TypeController::class , 'index']);
@@ -69,15 +69,15 @@ Route::post('/dashboard/bike_type/store',[Bike_TypeController::class , 'store'])
 Route::get('/dashboard/bike_type/delete/{id}',[Bike_TypeController::class , 'delete']);
 
 // Bike Routes
-Route::get('/dashboard/bike',[bikesController::class , 'index']);
-Route::get('/dashboard/bike/add',[bikesController::class , 'add']);
-Route::get('/dashboard/bike/edit',[bikesController::class , 'edit']); /*{id}*/
-Route::post('/dashboard/bike/store',[bikesController::class , 'store']);
-Route::get('/dashboard/bike/delete/{id}',[bikesController::class , 'delete']);
+Route::get('/dashboard/bike',[BikesController::class , 'index']);
+Route::get('/dashboard/bike/add',[BikesController::class , 'add']);
+Route::post('/dashboard/bike/edit/{id}',[BikesController::class , 'edit']);
+Route::post('/dashboard/bike/store',[BikesController::class , 'store']);
+Route::get('/dashboard/bike/delete/{id}',[BikesController::class , 'delete']);
 
 // Driver Routes
 Route::get('/dashboard/driver',[DriverController::class , 'index']);
-Route::post('/dashboard/driver/add',[DriverController::class , 'add']);
+Route::get('/dashboard/driver/add',[DriverController::class , 'add']);
 Route::post('/dashboard/driver/edit/{id}',[DriverController::class , 'edit']);
 Route::post('/dashboard/driver/store',[DriverController::class , 'store']);
 Route::get('/dashboard/driver/delete/{id}',[DriverController::class , 'delete']);
@@ -140,7 +140,7 @@ Route::get('/dashboard/trip_history/delete/{id}',[Trip_HistoryController::class 
 
 // Users Routes
 Route::get('/dashboard/user',[UserController::class , 'index']);
-Route::post('/dashboard/user/add',[UserController::class , 'add']);
+Route::get('/dashboard/user/add',[UserController::class , 'add']);
 Route::post('/dashboard/user/edit/{id}',[UserController::class , 'edit']);
 Route::post('/dashboard/user/store',[UserController::class , 'store']);
 Route::get('/dashboard/user/delete/{id}',[UserController::class , 'delete']);
@@ -160,7 +160,7 @@ Route::get('/dashboard/vehicle_type/delete/{id}',[Vehicle_TypeController::class 
 // Vehicles Routes
 Route::get('/dashboard/vehicles',[VehiclesController::class , 'index']);
 Route::get('/dashboard/vehicles/add',[VehiclesController::class , 'add']);
-Route::get('/dashboard/vehicles/edit',[VehiclesController::class , 'edit']); /*{id}*/
+Route::post('/dashboard/vehicles/edit/{id}',[VehiclesController::class , 'edit']);
 Route::post('/dashboard/vehicles/store',[VehiclesController::class , 'store']);
 Route::get('/dashboard/vehicles/delete/{id}',[VehiclesController::class , 'delete']);
 
@@ -176,6 +176,8 @@ Route::get('/dashboard/chat',[ChatController::class , 'index']);
 
 // Auth Rouths
 Route::get('/dashboard/auth',[AuthController::class , 'index']);
+Route::get('/dashboard/auth/add',[AuthController::class , 'add']);
+Route::post('/dashboard/auth/store',[AuthController::class , 'store']);
 Route::get('/dashboard/auth/lock_screen',[AuthController::class , 'lock_screen']);
 Route::get('/dashboard/auth/recover_password',[AuthController::class , 'recover_password']);
 Route::get('/dashboard/auth/register',[AuthController::class , 'register']);
