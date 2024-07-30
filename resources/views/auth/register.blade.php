@@ -41,15 +41,10 @@
            <!-- Session Status -->
            
            <!-- Validation Errors -->
-                              <form method="POST" action="https://templates.iqonic.design/datum/laravel/public/register" data-toggle="validator">
-                <input type="hidden" name="_token" value="6bYqF3CFloigfnwqIZVI2JtmIysek8sFgGcoLHnT">
+            <form method="POST" action="{{url('/registerstore')}}" data-toggle="validator">
+                @csrf
+
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <label for="username" class="text-secondary">Username</label>
-                            <input class="form-control" id="username"  name="username" value="" required placeholder="Enter Username">
-                        </div>
-                    </div>
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label for="first_name" class="text-secondary">First Name</label>
@@ -80,16 +75,10 @@
                         <input class="form-control" type="password" id="password_confirmation" name="password_confirmation" required autocomplete="new-password"  placeholder="Enter Confirmation Password">
                     </div>
                 </div>
-                 <div class="col-lg-12 mt-2">
-                       <div class="form-check mb-3 d-flex align-items-center">
-                           <input type="checkbox" class="form-check-input mt-0" id="customCheck1">
-                           <label class="form-check-label pl-2" for="customCheck1">I agree to the <a href="#">Terms of Service </a> and <a href="#">Privacy Policy</a> </label>
-                       </div>
-                 </div>
               </div>
               <button type="submit" class="btn btn-primary btn-block mt-2">Create Account</button>
               <div class="col-lg-12 mt-3">
-                   <p class="mb-0 text-center">Do you have an account? <a href="{{url('dashboard/login')}}">Sign In</a></p>
+                   <p class="mb-0 text-center">Do you have an account? <a href="{{url('/login')}}">Sign In</a></p>
               </div>
            </form>
         </div>

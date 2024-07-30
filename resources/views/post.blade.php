@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Header Banner -->
-    <section class="banner-header section-padding bg-img" data-overlay-dark="6" data-background="img/slider/1.jpg">
+    <section class="banner-header section-padding bg-img" data-overlay-dark="6" data-background="{{asset('webasset/img/slider/1.jpg')}}">
         <div class="v-middle">
             <div class="container">
                 <div class="row">
@@ -31,15 +31,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-12 mb-30"> <img src="img/slider/1.jpg" class="rounded-4" alt=""> </div>
-                <div class="col-lg-6 col-md-12"> <img src="img/slider/9.jpg" class="rounded-4" alt=""> </div>
+                <div class="col-lg-6 col-md-12 mb-30"> <img src="{{asset('webasset/img/slider/1.jpg')}}" class="rounded-4" alt=""> </div>
+                <div class="col-lg-6 col-md-12"> <img src="{{asset('webasset/img/slider/9.jpg')}}" class="rounded-4" alt=""> </div>
             </div>
             <div class="section">
                 <div class="row">
                     <!-- Comment -->
                     <div class="col-lg-6 col-md-12">
                         <div class="wrap">
-                            <div class="user"> <img src="img/team/2.jpg" alt=""> </div>
+                            <div class="user"> <img src="{{asset('webasset/img/team/2.jpg')}}" alt=""> </div>
                             <div class="cont">
                                 <h6>Olivia Brown &nbsp;&nbsp;<span>29 Dec 2024</span></h6>
                                 <p>Lorem ultricies nibh non dolor maximus sceleue inte drana on molisen faubs neque nec tincidunte aliquam eraten volume id lectus fermen finibus in the miss rana duru fermen soreen. </p>
@@ -86,7 +86,7 @@
         </div>
     </section>
     <!-- Lets Talk -->
-    <section class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/3.jpg">
+    <section class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="{{asset('webasset/img/slider/3.jpg')}}">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">

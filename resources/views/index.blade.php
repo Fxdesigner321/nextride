@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-12">
-                    <div class="item"> <img src="img/about.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/about.jpg')}}" class="img-fluid" alt="">
                         <div class="curv-butn icon-bg">
                             <a href="https://youtu.be/1LxcTt1adfY" class="vid">
                                 <div class="icon"> <i class="ti-control-play"></i> </div>
@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-md-12">
                 <div class="owl-carousel owl-theme">
-                    <div class="item"> <img src="img/services/1.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/services/1.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4><a href="service-details.html">Ride With Next Ride</a></h4>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img src="img/services/2.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/services/2.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4><a href="service-details.html">Car Rental with Driver</a></h4>
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img src="img/services/3.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/services/3.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4><a href="service-details.html">School Bus Bookings</a></h4>
@@ -158,7 +158,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img src="img/services/4.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/services/4.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4><a href="service-details.html">College Bus Booking</a></h4>
@@ -179,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img src="img/services/5.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/services/5.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4><a href="service-details.html">Picnic Transport</a></h4>
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img src="img/services/6.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/services/6.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4><a href="service-details.html">Monthly Transport</a></h4>
@@ -227,7 +227,7 @@
         </div>
     </section>
     <!-- Booking Search -->
-    <section data-scroll-index="1" class="background bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/2.jpg">
+    <section data-scroll-index="1" class="background bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="{{asset('webasset/img/slider/2.jpg')}}">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center mb-15">
@@ -314,7 +314,7 @@
             </div>
             <div class="cars1-carousel owl-theme owl-carousel">
                 <div class="item">
-                    <div class="img"> <img src="img/slider/7.jpg" alt=""> </div>
+                    <div class="img"> <img src="{{asset('webasset/img/slider/7.jpg')}}" alt=""> </div>
                     <div class="con opacity-1">
                         <div class="row">
                             <div class="col-md-7">
@@ -331,7 +331,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img"> <img src="img/slider/8.jpg" alt=""> </div>
+                    <div class="img"> <img src="{{asset('webasset/img/slider/8.jpg')}}" alt=""> </div>
                     <div class="con opacity-1">
                         <div class="row">
                             <div class="col-md-7">
@@ -348,7 +348,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img"> <img src="img/slider/9.jpg" alt=""> </div>
+                    <div class="img"> <img src="{{asset('webasset/img/slider/9.jpg')}}" alt=""> </div>
                     <div class="con opacity-1">
                         <div class="row">
                             <div class="col-md-7">
@@ -365,7 +365,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img"> <img src="img/slider/11.jpg" alt=""> </div>
+                    <div class="img"> <img src="{{asset('webasset/img/slider/11.jpg')}}" alt=""> </div>
                     <div class="con opacity-1">
                         <div class="row">
                             <div class="col-md-7">
@@ -382,7 +382,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img"> <img src="img/slider/12.jpg" alt=""> </div>
+                    <div class="img"> <img src="{{asset('webasset/img/slider/12.jpg')}}" alt=""> </div>
                     <div class="con opacity-1">
                         <div class="row">
                             <div class="col-md-7">
@@ -399,7 +399,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img"> <img src="img/slider/13.jpg" alt=""> </div>
+                    <div class="img"> <img src="{{asset('webasset/img/slider/13.jpg')}}" alt=""> </div>
                     <div class="con opacity-1">
                         <div class="row">
                             <div class="col-md-7">
@@ -416,7 +416,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img"> <img src="img/slider/14.jpg" alt=""> </div>
+                    <div class="img"> <img src="{{asset('webasset/img/slider/14.jpg')}}" alt=""> </div>
                     <div class="con opacity-1">
                         <div class="row">
                             <div class="col-md-7">
@@ -433,7 +433,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="img"> <img src="img/slider/15.jpg" alt=""> </div>
+                    <div class="img"> <img src="{{asset('webasset/img/slider/15.jpg')}}" alt=""> </div>
                     <div class="con opacity-1">
                         <div class="row">
                             <div class="col-md-7">
@@ -466,7 +466,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
-                        <div class="item"> <img src="img/cars/03.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/cars/03.jpg')}}" class="img-fluid" alt="">
                             <div class="title">
                                 <h4>Luxury Cars</h4>
                             </div>
@@ -486,7 +486,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/cars/04.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/cars/04.jpg')}}" class="img-fluid" alt="">
                             <div class="title">
                                 <h4>Sport Cars</h4>
                             </div>
@@ -506,7 +506,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/cars/02.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/cars/02.jpg')}}" class="img-fluid" alt="">
                             <div class="title">
                                 <h4>SUV</h4>
                             </div>
@@ -526,7 +526,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/cars/01.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/cars/01.jpg')}}" class="img-fluid" alt="">
                             <div class="title">
                                 <h4>Convertible</h4>
                             </div>
@@ -546,7 +546,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/cars/05.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/cars/05.jpg')}}" class="img-fluid" alt="">
                             <div class="title">
                                 <h4>Sedan</h4>
                             </div>
@@ -566,7 +566,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/cars/06.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/cars/06.jpg')}}" class="img-fluid" alt="">
                             <div class="title">
                                 <h4>Small Cars</h4>
                             </div>
@@ -681,7 +681,7 @@
         </div>
     </section>
     <!-- Video -->
-    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="4" data-background="img/slider/1.jpg">
+    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="4" data-background="{{asset('webasset/img/slider/1.jpg')}}">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -732,7 +732,7 @@
                             </div>
                             <div class="info mt-30">
                                 <div class="img-curv">
-                                    <div class="img"> <img src="img/team/1.jpg" alt=""> </div>
+                                    <div class="img"> <img src="{{asset('webasset/img/team/1.jpg')}}" alt=""> </div>
                                     <div class="shap-left-top">
                                         <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
                                             <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
@@ -774,7 +774,7 @@
                             </div>
                             <div class="info mt-30">
                                 <div class="img-curv">
-                                    <div class="img"> <img src="img/team/4.jpg" alt=""> </div>
+                                    <div class="img"> <img src="{{asset('webasset/img/team/4.jpg')}}" alt=""> </div>
                                     <div class="shap-left-top">
                                         <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
                                             <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
@@ -816,7 +816,7 @@
                             </div>
                             <div class="info mt-30">
                                 <div class="img-curv">
-                                    <div class="img"> <img src="img/team/6.jpg" alt=""> </div>
+                                    <div class="img"> <img src="{{asset('webasset/img/team/6.jpg')}}" alt=""> </div>
                                     <div class="shap-left-top">
                                         <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
                                             <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
@@ -853,7 +853,7 @@
             <div class="row">
                     <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
-                        <div class="item"> <img src="img/blog/3.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/blog/3.jpg')}}" class="img-fluid" alt="">
                             <div class="bottom-fade"></div>
                             <div class="title">
                                 <h6>Rental</h6>
@@ -876,7 +876,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/blog/4.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/blog/4.jpg')}}" class="img-fluid" alt="">
                             <div class="bottom-fade"></div>
                             <div class="title">
                                 <h6>Sport Cars</h6>
@@ -899,7 +899,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/blog/5.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/blog/5.jpg')}}" class="img-fluid" alt="">
                             <div class="bottom-fade"></div>
                             <div class="title">
                                 <h6>Fines</h6>
@@ -922,7 +922,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/blog/6.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/blog/6.jpg')}}" class="img-fluid" alt="">
                             <div class="bottom-fade"></div>
                             <div class="title">
                                 <h6>Airport</h6>
@@ -945,7 +945,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/blog/7.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/blog/7.jpg')}}" class="img-fluid" alt="">
                             <div class="bottom-fade"></div>
                             <div class="title">
                                 <h6>Rules</h6>
@@ -968,7 +968,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item"> <img src="img/blog/8.jpg" class="img-fluid" alt="">
+                        <div class="item"> <img src="{{asset('webasset/img/blog/8.jpg')}}" class="img-fluid" alt="">
                             <div class="bottom-fade"></div>
                             <div class="title">
                                 <h6>Rental Car</h6>
@@ -997,7 +997,7 @@
         </div>
     </section>
     <!-- Lets Talk -->
-    <section class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/3.jpg">
+    <section class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="{{asset('webasset/img/slider/3.jpg')}}">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -1015,28 +1015,28 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="owl-carousel owl-theme">
                         <div class="clients-logo">
-                            <a href="#0"><img src="img/clients/1.png" alt=""></a>
+                            <a href="#0"><img src="{{asset('webasset/img/clients/1.png')}}" alt=""></a>
                         </div>
                         <div class="clients-logo">
-                            <a href="#0"><img src="img/clients/2.png" alt=""></a>
+                            <a href="#0"><img src="{{asset('webasset/img/clients/2.png')}}" alt=""></a>
                         </div>
                         <div class="clients-logo">
-                            <a href="#0"><img src="img/clients/3.png" alt=""></a>
+                            <a href="#0"><img src="{{asset('webasset/img/clients/3.png')}}" alt=""></a>
                         </div>
                         <div class="clients-logo">
-                            <a href="#0"><img src="img/clients/4.png" alt=""></a>
+                            <a href="#0"><img src="{{asset('webasset/img/clients/4.png')}}" alt=""></a>
                         </div>
                         <div class="clients-logo">
-                            <a href="#0"><img src="img/clients/5.png" alt=""></a>
+                            <a href="#0"><img src="{{asset('webasset/img/clients/5.png')}}" alt=""></a>
                         </div>
                         <div class="clients-logo">
-                            <a href="#0"><img src="img/clients/6.png" alt=""></a>
+                            <a href="#0"><img src="{{asset('webasset/img/clients/6.png')}}" alt=""></a>
                         </div>
                         <div class="clients-logo">
-                            <a href="#0"><img src="img/clients/7.png" alt=""></a>
+                            <a href="#0"><img src="{{asset('webasset/img/clients/7.png')}}" alt=""></a>
                         </div>
                         <div class="clients-logo">
-                            <a href="#0"><img src="img/clients/8.png" alt=""></a>
+                            <a href="#0"><img src="{{asset('webasset/img/clients/8.png')}}" alt=""></a>
                         </div>
                     </div>
                 </div>

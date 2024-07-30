@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Header Banner -->
-    <section class="banner-header section-padding bg-img" data-overlay-dark="6" data-background="img/slider/1.jpg">
+    <section class="banner-header section-padding bg-img" data-overlay-dark="6" data-background="{{asset('webasset/img/slider/1.jpg')}}">
         <div class="v-middle">
             <div class="container">
                 <div class="row">
@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-45">
-                    <div class="item"> <img src="img/blog/3.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/blog/3.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h6>Rental</h6>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-45">
-                    <div class="item"> <img src="img/blog/4.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/blog/4.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h6>Sport Cars</h6>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-45">
-                    <div class="item"> <img src="img/blog/5.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/blog/5.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h6>Fines</h6>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-45">
-                    <div class="item"> <img src="img/blog/6.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/blog/6.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h6>Airport</h6>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-45">
-                    <div class="item"> <img src="img/blog/7.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/blog/7.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h6>Rules</h6>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-45">
-                    <div class="item"> <img src="img/blog/8.jpg" class="img-fluid" alt="">
+                    <div class="item"> <img src="{{asset('webasset/img/blog/8.jpg')}}" class="img-fluid" alt="">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h6>Rental Car</h6>
@@ -187,7 +187,7 @@
         </div>
     </section>
     <!-- Lets Talk -->
-    <section class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/3.jpg">
+    <section class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="{{asset('webasset/img/slider/3.jpg')}}">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">

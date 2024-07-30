@@ -10,10 +10,18 @@ class DriverController extends Controller
 {
     function index(){
 
-        $drivers = DB::select('select * from drivers');
+        $drivers = DB::select('select * from drivers where deleted_at is NULL');
 
         return view('dashboard.driver.index',compact('drivers'));
     }
+
+    function delete($id){
+
+        DB::update('Update drivers set deleted_at = ? Where id = ?', [now(),$id]);
+
+        return redirect('dashboard/driver');
+    }
+
 
     function store(Request $req){
 

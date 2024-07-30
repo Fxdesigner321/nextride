@@ -28,7 +28,7 @@
                                         </a>
                                     </div>
                                 </form>
-                                <a href="{{url('dashboard/auth/add')}}"
+                                <a href="{{url('dashboard/users/add')}}"
                                    class="btn btn-primary position-relative d-flex align-items-center justify-content-between">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
@@ -134,7 +134,7 @@
                                                     </svg>
                                                 </a>
                                                 <a class="badge bg-danger" data-toggle="tooltip" data-placement="top"
-                                                   title="" data-original-title="Delete" href="#">
+                                                   title="" data-original-title="Delete" href="{{url('/dashboard/auth/delete')}}/{{$item->id}}">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none"
                                                          viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -143,7 +143,6 @@
                                                     </svg>
                                                 </a>
                                             </div>
-                                        </td>
                                     </tr>
                                     @endforeach
                                     

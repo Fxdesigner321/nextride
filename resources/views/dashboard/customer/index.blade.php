@@ -115,7 +115,7 @@
                                                     </svg>
                                                 </a>
                                                 <a class="badge bg-danger" data-toggle="tooltip" data-placement="top"
-                                                   title="" data-original-title="Delete" href="#">
+                                                   title="" data-original-title="Delete" href="{{url('dashboard/customer/delete/')}}/{{$item->id}}">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none"
                                                          viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"

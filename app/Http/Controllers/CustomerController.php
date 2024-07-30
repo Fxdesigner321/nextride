@@ -12,9 +12,16 @@ class CustomerController extends Controller
 {
     function index(){
 
-        $customers = DB::select('select * from customers');
+        $customers = DB::select('select * from customers where deleted_at is NULL');
 
         return view('dashboard.customer.index',compact('customers'));
+    }
+
+    function delete($id){
+
+        DB::update('Update customers set deleted_at = ? Where id = ?', [now(),$id]);
+
+        return redirect('dashboard/customer');
     }
 
     function add(){

@@ -1,3 +1,4 @@
+
 @extends('layouts.authlayout')
 
 @section('content')
@@ -13,8 +14,8 @@
            <img src="{{asset('dashasset/images/logo.png')}}" class="img-fluid  rounded-normal  darkmode-logo" alt="logo">
               <img src="../images/logo-dark.png" alt="user-icon" class="img-fluid rounded-normal light-logo">
            </div>
-           <h3 class="mb-3 font-weight-bold text-center">Reset Password</h3>
-           <p class="text-center text-secondary mb-4">Enter Your Log in account Email to continue</p>
+           <h3 class="mb-3 font-weight-bold text-center">Sign In</h3>
+           <p class="text-center text-secondary mb-4">Log in to your account to continue</p>
            {{-- <div class="social-btn d-flex justify-content-around align-items-center mb-4">
                <button class="btn btn-outline-light">
                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="88.428 12.828 107.543 207.085">
@@ -41,8 +42,16 @@
             <!-- Session Status -->
             
             <!-- Validation Errors -->
-                                <form method="POST" action="https://templates.iqonic.design/datum/laravel/public/login" data-toggle="validator">
-                <input type="hidden" name="_token" value="6bYqF3CFloigfnwqIZVI2JtmIysek8sFgGcoLHnT">
+            <form method="POST" action="{{url('/loginstore')}}" data-toggle="validator">
+            @csrf
+
+            @if (session()->has('status'))
+            
+            <div class="alert alert-danger">
+                {{session()->get('status')}}
+            </div>
+            @endif
+            
               <div class="row">
                  <div class="col-lg-12">
                     <div class="form-group">
@@ -50,9 +59,17 @@
                        <input id="email" name="email" value="" class="form-control" type="email" placeholder="Enter Email" required autofocus>
                     </div>
                  </div>
-                                        
+                 <div class="col-lg-12 mt-2">
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label class="text-secondary">Password</label>
+                            <label><a href="{{url('dashboard/reset_password')}}">Forgot Password?</a></label>
+                        </div>                                    
+                       <input class="form-control" type="password" placeholder="Enter Password" name="password"  required autocomplete="current-password">
+                    </div>
+                 </div>                              
               </div>
-              <button type="submit" class="btn btn-primary btn-block mt-2">Reset Password</button>
+              <button type="submit" class="btn btn-primary btn-block mt-2">Log In</button>
               <div class="col-lg-12 mt-3">
                    <p class="mb-0 text-center">Don't have an account? <a href="{{url('dashboard/register')}}">Sign Up</a></p>
               </div>
@@ -66,4 +83,3 @@
 </div>
 
 @endsection
-    

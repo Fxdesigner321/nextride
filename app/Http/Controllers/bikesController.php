@@ -10,9 +10,16 @@ class BikesController extends Controller
 {
     function index(){
 
-        $bikes = DB::select('select * from bikes');
+        $bikes = DB::select('select * from bikes where deleted_at is NULL');
 
         return view('dashboard.bike.index',compact('bikes'));
+    }
+
+    function delete($id){
+
+        DB::update('Update bikes set deleted_at = ? Where id = ?', [now(),$id]);
+
+        return redirect('dashboard/bike');
     }
 
     function store(Request $req){

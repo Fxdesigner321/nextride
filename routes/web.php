@@ -34,14 +34,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //Home Page Routes
-Route::get('/',[HomeController::class, 'index']);
+Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/about',[HomeController::class, 'about']);
 Route::get('/blog',[HomeController::class, 'blog']);
 Route::get('/buses',[HomeController::class, 'buses']);
 Route::get('/cardetails',[HomeController::class, 'cardetails']);
 Route::get('/career',[HomeController::class, 'career']);
 Route::get('/contact',[HomeController::class, 'contact']);
-Route::get('/drive',[HomeController::class, 'drive']);
+Route::get('/drive',[HomeController::class, 'drive'])->middleware('auth');
 Route::get('/faq',[HomeController::class, 'faq']);
 Route::get('/picnic',[HomeController::class, 'picnic']);
 Route::get('/post',[HomeController::class, 'post']);
@@ -50,16 +50,29 @@ Route::get('/rentacar',[HomeController::class, 'rentacar']);
 Route::get('/ride',[HomeController::class, 'ride']);
 Route::get('/teamsingle',[HomeController::class, 'teamsingle']);
 
+Route::get('/custom-auth',function(){
+    return view('errors.403');
+})->name('403');
+
+
+// auth and register routees 
+
+
+Route::get('/login',[AuthController::class , 'login'])->name('login');
+Route::post('/loginstore',[AuthController::class , 'loginstore'])->name('loginstore');
+Route::get('/register',[AuthController::class , 'register']);
+Route::post('/registerstore',[AuthController::class , 'registerstore']);
+Route::get('/logout',[AuthController::class , 'logout'])->name('logout');
 
 // Dashboard Routes 
-Route::get('/dashboard',[DashboardController::class , 'index']);
+Route::get('/dashboard',[DashboardController::class , 'index'])->middleware('admin');
 
 // Customer Routes
 Route::get('/dashboard/customer',[CustomerController::class , 'index']);
 Route::get('/dashboard/customer/add',[CustomerController::class , 'add']);
 Route::post('/dashboard/customer/store',[CustomerController::class , 'store']);
 Route::get('/dashboard/customer/edit/',[CustomerController::class , 'edit']); /*{id}*/
-Route::get('/dashboard/customer/delete/{id}',[CustomerController::class , 'delete'])->name('customer.delete');
+Route::get('/dashboard/customer/delete/{id}',[CustomerController::class , 'delete']);
 
 // Bike_Type Routes
 Route::get('/dashboard/bike_type',[Bike_TypeController::class , 'index']);
@@ -178,10 +191,10 @@ Route::get('/dashboard/chat',[ChatController::class , 'index']);
 Route::get('/dashboard/auth',[AuthController::class , 'index']);
 Route::get('/dashboard/auth/add',[AuthController::class , 'add']);
 Route::post('/dashboard/auth/store',[AuthController::class , 'store']);
+Route::get('/dashboard/auth/delete/{id}',[AuthController::class , 'delete']);
 Route::get('/dashboard/auth/lock_screen',[AuthController::class , 'lock_screen']);
-Route::get('/dashboard/auth/recover_password',[AuthController::class , 'recover_password']);
-Route::get('/dashboard/auth/register',[AuthController::class , 'register']);
-Route::get('/dashboard/auth/reset_password',[AuthController::class , 'reset_password']);
+Route::get('/dashboard/recover_password',[AuthController::class , 'recover_password']);
+Route::get('/dashboard/register',[AuthController::class , 'register']);
+Route::get('/dashboard/reset_password',[AuthController::class , 'reset_password']);
+
 Route::get('/dashboard/auth/verify_email',[AuthController::class , 'verify_email']);
-
-
