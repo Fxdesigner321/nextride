@@ -9,7 +9,7 @@
       <div class="caption h6">
         <div class="v-middle mt-5">
             <h1>Go anywhere <br> with Next Ride</h1>
-            <h5>Book Next And Get<span>30% <i>Off</i></span>  First Three Rides</h5> <a href="#0" class="button-1 mt-15 mb-15">View Details <span class="ti-arrow-top-right"></span></a> <a href="#" data-scroll-nav="1" class="button-2 mt-15 mb-15">Rent Now <span class="ti-arrow-top-right"></span></a>
+            <h5>Book Next And Get<span>30% <i>Off</i></span>  First Three Rides</h5> <a href="#0" class="button-1 mt-15 mb-15">View Details  <i class="fa-solid fa-arrow-up-right-from-square"></i></a> <a href="#" data-scroll-nav="1" class="button-2 mt-15 mb-15">Rent Now <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
        </div>

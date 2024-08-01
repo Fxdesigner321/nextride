@@ -25,6 +25,8 @@
 <link rel="stylesheet" href="{{asset('dashasset/vendor/Leaflet/leaflet.css')}}">
 <link rel="stylesheet" href="{{asset('dashasset/vendor/select2/css/select2.min.css')}}">
 <link rel="stylesheet" href="{{asset('dashasset/css/custom.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body class="" id="app">
     <div id="loading">
@@ -521,51 +523,31 @@
                     </li>
                     <li class=" sidebar-layout">
                         <a href="{{url('dashboard/customer')}}" class="svg-icon ">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
-                            </i>
+                            <i class="fa-solid fa-users"></i>
                             <span class="ml-2">Customer</span>
                         </a>
                     </li>
                     <li class=" sidebar-layout">
                         <a href="{{url('dashboard/driver')}}" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                                </svg>
-                            </i>
+                            <i class="fa-solid fa-person-circle-check"></i>
                             <span class="ml-2">Driver</span>
                         </a>
                     </li>
                     <li class=" sidebar-layout" >
                         <a href="{{url('dashboard/vehicles')}}" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
-                            </i>
+                            <i class="fa-solid fa-car"></i>
                             <span class="ml-2">Vehicles</span>
                         </a>
                     </li>
                     <li class=" sidebar-layout" >
                         <a href="{{url('dashboard/bike')}}" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
-                            </i>
+                            <i class="fa-solid fa-motorcycle"></i>
                             <span class="ml-2">Bikes</span>
                         </a>
                     </li>
                     <li class="sidebar-layout">
                         <a href="#app5" class="collapsed svg-icon" data-toggle="collapse" aria-expanded="false">
-                            <i>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                </svg>
-                            </i>
+                            <i class="fa-solid fa-road"></i>
                             <span class="ml-2">Rides</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon iq-arrow-right arrow-active" width="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -574,31 +556,19 @@
                         <ul id="app5" class="submenu collapse" data-parent="#iq-sidebar-toggle">
                             <li class=" sidebar-layout">
                                 <a href="table/data.html" class="svg-icon">
-                                    <i class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-                                        </svg>
-                                    </i>
+                                    <i class="fa-solid fa-road"></i>
                                     <span class="ml-2">Ride</span>
                                 </a>
                             </li>
                             <li class=" sidebar-layout">
                                 <a href="table/data.html" class="svg-icon">
-                                    <i class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-                                        </svg>
-                                    </i>
+                                    <i class="fa-solid fa-code-pull-request"></i>
                                     <span class="ml-2">Ride Request</span>
                                 </a>
                             </li>
                             <li class=" sidebar-layout">
                                 <a href="table/editable.html" class="svg-icon">
-                                    <i class="">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                                        </svg>
-                                    </i>
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
                                     <span class="ml-2">Trip History</span>
                                 </a>
                             </li>
@@ -606,11 +576,7 @@
                     </li>
                     <li class=" sidebar-layout">
                         <a href="calender.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                            </i>
+                            <i class="fa-solid fa-bell"></i>
                             <span class="ml-2">Nofications</span>
                         </a>
                     </li>
@@ -646,8 +612,8 @@
                             </li>
                             <li class=" sidebar-layout">
                                 <a href="{{url('dashboard/auth/login')}}" class="svg-icon">
-                                    <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i><svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
                                     </svg>
                                     </i><span class="">Login</span>
                                 </a>
@@ -692,29 +658,20 @@
                     </li>
                     <li class=" sidebar-layout">
                         <a href="{{url('dashboard/rating')}}" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                                </svg>
-                            </i><span class="ml-2">Rating</span>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span class="ml-2">Rating</span>
                         </a>
                     </li>
                     <li class=" sidebar-layout">
                         <a href="extra/maintenance.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                                </svg>
-                            </i><span class="ml-2">Payment</span>
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            <span class="ml-2">Payment</span>
                         </a>
                     </li>
                     <li class=" sidebar-layout">
                         <a href="extra/faq.html" class="svg-icon">
-                            <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
-                                </svg>
-                            </i><span class="ml-2">Year</span>
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span class="ml-2">Year</span>
                         </a>
                     </li>
                     <li class="px-3 pt-3 pb-2">
@@ -1136,6 +1093,9 @@
         </div>
     </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <!-- Backend Bundle JavaScript -->
  <script src="{{asset('dashasset/js/backend-bundle.min.js')}}"></script>
 

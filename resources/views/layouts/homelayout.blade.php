@@ -30,7 +30,7 @@
         <div class="container">
             <!-- Logo -->
             <div class="logo-wrapper">
-                <a class="logo" href="index.html"> <img src="{{asset('webasset/img/logo-light.png')}}" class="logo-img" alt=""> </a>
+                <a class="logo" href="{{url('/')}}"> <img src="{{asset('webasset/img/logo-light.png')}}" class="logo-img" alt=""> </a>
                 <!-- <a class="logo" href="index.html"><h2>Renta<span>x</span></h2></a> -->
             </div>
             <!-- Button -->
@@ -48,7 +48,7 @@
                     </li>
                     <li class="nav-item"> <a class="nav-link" href="{{url('/blog')}}" role="button">News & Blog</a>
                     </li>
-                    <li class="nav-item dropdown"> <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">More <i class="ti-angle-down"></i></a>
+                    <li class="nav-item dropdown"> <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">More <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{url('/rentacar')}}" class="dropdown-item"><span>Rent A Car</span></a></li>
                             <li><a href="{{url('/buses')}}" class="dropdown-item"><span>School & College Bus</span></a></li>
@@ -70,7 +70,7 @@
                         </div>
                     </li>
                 @else
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/login') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/login') }}">Login/Register</a></li>
                 @endif
                 
                 </ul>
@@ -79,7 +79,7 @@
                         <div class="icon"> <i class="fa-solid fa-user"></i> </div>
                         <div class="text">
                             <p>Need help?</p>
-                            <h5><a href="tel:8551004444">855 100 4444</a></h5>
+                            <h5><a href="tel:8551004444">03322085540</a></h5>
                         </div>
                     </div>
                 </div>
