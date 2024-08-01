@@ -3,18 +3,114 @@
 @section('content')
 
     <!-- Header Banner -->
-    <section class="banner-header section-padding bg-img" data-overlay-dark="6" data-background="{{asset('webasset/img/slider/1.jpg')}}">
+    <section class="banner-header section-padding bg-img" data-overlay-dark="4" data-background="{{asset('webasset/img/slider/3.jpg')}}">
         <div class="v-middle">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h6>Blog & News</h6>
-                        <h1>Latest News</h1>
+                    <div class="col-md-12">
+                        <h6>Next Ride</h6>
+                        <h1>Rent A <span>Car</span></h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <style>
+        .modal-dialog {
+            max-width: 80%; /* Adjust width as needed */
+        }
+        /* .modal-content {
+            padding: 20px;
+        } */
+        .modal-body {
+            padding: 0;
+        }
+        .modal-title {
+            color: white;
+            text-align: center;
+            margin: 0;
+            width: 100%;
+        }
+    </style>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h2>Search for Rental Cars</h2>
+        <form action="" method="GET">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter city">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <label for="car_type">Car Type:</label>
+                        <input type="text" class="form-control" id="car_type" name="car_type" placeholder="Enter car type">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <input name="submit" type="submit" value="Search Location" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="formModalLabel">
+          Search for Rental Cars
+                </h5>            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="" method="GET">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <br>
+                      <label for="city">City:</label>
+                      <input type="text" class="form-control" id="city" name="city" placeholder="Enter city">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                  <br>
+                    <div class="form-group">
+                      <label for="car_type">Car Type:</label>
+                      <input type="text" class="form-control" id="car_type" name="car_type" placeholder="Enter car type">
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <input name="submit" type="submit" value="Search Location" class="btn btn-primary">
+                </div>
+                <br>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var myModal = new bootstrap.Modal(document.getElementById('searchModal'), {
+                keyboard: false
+            });
+            myModal.show();
+        });
+    </script>
+
+
+
+
+            <br> <br>
+                    <!-- End Search Form -->
     <!-- divider line -->
     <div class="line-vr-section"></div>
     <!-- Blog 2 -->

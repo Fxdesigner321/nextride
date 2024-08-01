@@ -22,13 +22,13 @@
                 <div class="col-lg-3 col-md-6 animate-box" data-animate-effect="fadeInUp">
                     <div class="item"> <span class="icon omfi-envelope"></span>
                         <h5>Email us</h5>
-                        <p>info@nextride.com</p> <i class="numb omfi-envelope"></i>
+                        <p>info@Next Ride.com</p> <i class="numb omfi-envelope"></i>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 animate-box" data-animate-effect="fadeInUp">
                     <div class="item"> <span class="icon omfi-location"></span>
                         <h5>Our address</h5>
-                        <p>Karachi, DHA Phase 2, Office 123</p> <i class="numb omfi-location"></i>
+                        <p>Dubai, Water Tower, Office 123</p> <i class="numb omfi-location"></i>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 animate-box" data-animate-effect="fadeInUp">
@@ -40,7 +40,7 @@
                 <div class="col-lg-3 col-md-6 animate-box" data-animate-effect="fadeInUp">
                     <div class="item active"> <span class="icon omfi-phone"></span>
                         <h5>Call us</h5>
-                        <p>+9232085540</p> <i class="numb omfi-phone"></i>
+                        <p>+971 52-333-4444</p> <i class="numb omfi-phone"></i>
                     </div>
                 </div>
             </div>
@@ -142,5 +142,5 @@
             </div>
         </div>
     </section>
-    
+
     @endsection

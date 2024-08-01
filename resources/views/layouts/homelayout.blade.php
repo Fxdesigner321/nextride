@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap">
     <link rel="stylesheet" href="{{asset('webasset/css/plugins.css')}}" />
     <link rel="stylesheet" href="{{asset('webasset/css/style.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Preloader -->
@@ -58,7 +59,7 @@
                             <li><a href="{{url('/teamsingle')}}" class="dropdown-item"><span>Our Team</span></a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="{{url('/about')}}">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{url('/contact')}}">Contact</a></li>
                     @if (Auth::check())
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -302,6 +303,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- jQuery -->
     <script src="{{asset('webasset/js/jquery-3.7.1.min.js')}}"></script>
     <script src="{{asset('webasset/js/jquery-migrate-3.4.1.min.js')}}"></script>
